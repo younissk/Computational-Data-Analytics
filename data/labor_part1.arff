@@ -1,0 +1,35 @@
+@relation labor-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N2-F2-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N2-F1
+
+@attribute duration numeric
+@attribute wage-increase-first-year numeric
+@attribute wage-increase-second-year numeric
+@attribute wage-increase-third-year numeric
+@attribute cost-of-living-adjustment {none,tcf,tc}
+@attribute working-hours numeric
+@attribute pension {none,ret_allw,empl_contr}
+@attribute standby-pay numeric
+@attribute shift-differential numeric
+@attribute education-allowance {yes,no}
+@attribute statutory-holidays numeric
+@attribute vacation {below_average,average,generous}
+@attribute longterm-disability-assistance {yes,no}
+@attribute contribution-to-dental-plan {none,half,full}
+@attribute bereavement-assistance {yes,no}
+@attribute contribution-to-health-plan {none,half,full}
+@attribute class {bad,good}
+
+@data
+2,4.5,5.8,?,?,35,ret_allw,?,?,yes,11,below_average,?,full,?,full,good
+2,2,2.5,?,?,35,?,?,6,yes,12,average,?,?,?,?,good
+1,5.7,?,?,none,40,empl_contr,?,4,?,11,generous,yes,full,?,?,good
+1,3,?,?,none,36,?,?,10,no,11,generous,?,?,?,?,good
+2,4.3,4.4,?,?,38,?,?,4,?,12,generous,?,full,?,full,good
+2,4.5,4.5,?,tcf,?,?,?,?,yes,10,below_average,yes,none,?,half,good
+2,4.5,4,?,none,40,?,?,4,?,12,average,yes,full,yes,half,good
+2,5.7,4.5,?,none,40,ret_allw,?,?,?,11,average,yes,full,yes,full,good
+3,4,3.5,?,none,40,empl_contr,?,6,?,11,average,yes,full,?,full,good
+1,2.8,?,?,none,38,empl_contr,2,3,no,9,below_average,yes,half,?,none,bad
+2,2,3,?,none,38,empl_contr,?,?,yes,12,generous,yes,none,yes,full,bad
+2,4.5,4,?,?,40,?,?,2,no,10,below_average,no,half,?,half,bad
+3,2,2.5,?,?,35,none,?,?,?,10,average,?,?,yes,full,bad
+2,4,5,?,none,40,none,?,3,no,10,below_average,no,none,?,none,bad
